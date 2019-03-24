@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>剁手網-購買頁面</title>
+    <link rel="stylesheet" href="stylesheet/normalize.css">
+    <link rel="stylesheet" href="stylesheet/styles_index_scss.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="top-text">
+            <p>新春特價中！三件免運費再抽大紅包！</p>
+        </div>
+        <div class="top-menu">
+            <div class="left-menu threepart">
+                <button>
+                    MENU<i class="fas fa-sort-down"></i>
+                </button>
+                <ul>
+                    <li><a href="#">線上商城</a></li>
+                    <li><a href="#">關於剁手</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="center-text threepart">
+                <h2>剁手網</h2>
+            </div>
+            <div class="right-menu threepart">
+                <button>
+                    USER<i class="fas fa-sort-down"></i>
+                </button>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fas fa-globe-asia"></i></a></li>
+                    <li><a href="#" class="buy-i"><i class="fas fa-shopping-cart"></i>
+                            <span class="red-point">1</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="root">
+        <ul>
+            <li>&lt;<a href="#">繼續購物</a></li>
+        </ul>
+    </div>
+    <form action="#">
+        <div class="purchase-page">
+            <table class="purchase-car">
+                <thead>
+                    <th class="item-col">購物車(1)</th>
+                    <th class="item-list">價格</th>
+                    <th class="item-list">數量</th>
+                    <th class="item-list subtotal">小計</th>
+                </thead>
+                <tr class="purchase-car-boxes">
+                    <td>
+                        <div class="purchase-car-item">
+                            <div class="purchase-car-item-pic">
+                                <img src="https://picsum.photos/125/?random" alt="神采飛揚16色珠光眼影">
+                            </div>
+                            <div class="purchase-car-box-text">
+                                <h3>神采飛揚16色珠光眼影[自然色]</h3>
+                                <p>YR-5640</p>
+                                <a href="#">刪除</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <h3>$1750</h3>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input type="number" id="price" placeholder="1">
+                        </div>
+                    </td>
+                    <td class="subtotal">
+                        <div>
+                            <h3>$1750</h3>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="rebate-total">
+            <div class="settle-accounts">
+                <div class="discount">
+                    <p>使用折扣條碼：
+                        <input type="text">
+                    </p>
+                </div>
+                <div class="total">
+                    <table class="cost-total">
+                        <tr>
+                            <td class="total-first-col">
+                                <p>商品金額</p>
+                            </td>
+                            <td>
+                                <p>$1750</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>運費</p>
+                            </td>
+                            <td>
+                                <p>$0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="total-last-row">
+                                <h3>總計</h3>
+                            </td>
+                            <td class="total-last-row">
+                                <h3>$1750</h3>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="submitbuy"><a href="#">結帳</a></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="e-mail">
+        <h2>擔心錯過剁手的好機會嗎？<br>
+            快來訂閱電子報吧！</h2>
+        <form action="#" class="mail-text">
+            <i class="fas fa-envelope"></i>
+            <input type="text" placeholder="e-mail" />
+            <div class="submit"><a href="#">訂！</a></div>
+        </form>
+    </div>
+    <div class="bottom-menu">
+        <ul>
+            <li><a href="#">線上商城</a></li>
+            <li><a href="#">關於剁手</a></li>
+            <li><a href="#">聯絡我們</a></li>
+            <li><a href="#">運費資訊</a></li>
+            <li><a href="#">隱私權政策</a></li>
+        </ul>
+    </div>
+    <div class="bottom-text">
+        <p>2019 © Build School</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            if ($(".left-menu button").is(":visible")) {
+                $(".left-menu ul").hide();
+                $(".left-menu button").on("click", function () {
+                    $(".left-menu ul").toggle();
+                    $(".left-menu button i").toggleClass("fas fa-sort-down").toggleClass("fas fa-sort-up");
+                });
+            }
+        });
+    </script>
+    <script>
+        $(function () {
+            if ($(".right-menu button").is(":visible")) {
+                $(".right-menu ul").hide();
+                $(".right-menu button").on("click", function () {
+                    $(".right-menu ul").toggle();
+                    $(".right-menu button i").toggleClass("fas fa-sort-down").toggleClass("fas fa-sort-up");
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

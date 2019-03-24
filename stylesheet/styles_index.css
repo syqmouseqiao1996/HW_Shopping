@@ -1,0 +1,552 @@
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.4;
+    color: #555;
+}
+
+a {
+    color: #009ced;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0081c3;
+    text-decoration: underline;
+}
+
+.container{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.container2{
+    width: 540px;
+    margin: 0 auto;
+}
+
+.container3{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.top-text{
+    min-width: 1080px;
+    background-color: #000000;
+    height:36px;
+    line-height: 36px;
+}
+
+.top-text p{
+    margin: 0px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.top-menu{
+    min-width: 1080px;
+    background-color: #ffffff;
+    height:60px;
+    display: flex;
+}
+
+.left-menu{
+    width: 360px;
+}
+
+.left-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex: 0 0 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left-menu a{
+    display: block;
+    width: 90px;
+    height: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.left-menu i{
+    margin-left: 5px;
+}
+
+.left-menu li:hover{
+    background-color: #d8d8d8;
+}
+
+.threepart{
+    flex-grow: 1;
+}
+
+.center-text{
+    width: 360px;
+}
+
+.center-text h2{
+    font-weight: bold;
+    margin: 0px;
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.right-menu{
+    width: 360px;
+}
+
+.right-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-menu a{
+    display: block;
+    margin: 0px 3px;
+    width: 25px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.right-menu i{
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.right-menu .buy-i{
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.index-image{
+    height: 400px;
+    background: url(ex_images/index-image.jpg) center center no-repeat;
+    background-size: cover;  /*系統會自動計算幫你把背景填滿不變形調整適合大小*/
+    position: relative;
+}
+
+.index-image h2{
+    font-size: 50px;
+    color: #fff;  /*先寫共同認識的寫法：若認識後面，後面覆蓋前面；若不認識後面，則只做認識的部分*/
+    color: rgba(255, 255, 255, 0.8);  /*有透明度的色彩，未便免瀏覽器不支援所以在前面加設color*/
+    position: absolute;  /*絕對定位*/
+    left: 100px;
+    top: 60px;
+    bottom: 80px;
+}
+
+.new-items{
+    padding: 40px 0;
+}
+
+.new-items ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.new-items li{
+    flex: 0 0 250px;
+}
+
+.new-items a{
+    /*display: block;*/
+    padding: 0px;
+    margin: 0px;
+}
+
+.new-items img{
+    width: 250px;
+    height: auto;
+    margin: 0px;
+}
+
+.new-items p{
+    color: #000000;
+    margin: 0px;
+    text-align: center
+}
+
+.new-items h2{
+    color: #000000;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 30px;  /*上 左右 下*/
+}
+
+.blawhi{
+    margin: 0px;
+    padding: 40px 0px;
+    background-color: #8a8a8a;
+}
+
+.blawhi h2{
+    display: block;
+    margin: 0;
+    padding: 10px 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.blawhi p{
+    margin: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.e-mail-index{
+    min-width: 1080px;
+    margin: 0px;
+    padding: 40px 0px;
+}
+
+.e-mail{
+    background-color: #f3f3f3;
+    min-width: 1080px;
+    margin: 0px;
+    padding: 40px 0px;
+}
+
+.e-mail h2{
+    margin: 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.mail-text i{
+    position: relative;
+    left: 11px;
+    top: 27px;
+}
+
+.mail-text input{
+    width: 505px;
+    height: 28px;
+    padding-left: 35px;
+    border: transparent;
+    background-color: transparent;
+    border-bottom: #8a8a8a solid;
+}
+
+.submit{
+    margin: 10px 0px;
+    height: 36px;
+    background-color: #000000;
+}
+
+.submit a{
+    display: block;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+.submit a:hover{
+    text-decoration: none;
+}
+
+.bottom-menu{
+    min-width: 1080px;
+    height: 40px;
+    background-color: #242424;
+}
+
+.bottom-menu ul{
+    margin: 0px;
+    padding: 0px;    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-menu li{
+    width: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bottom-menu a{
+    display: block;
+    margin: 0px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+
+.bottom-menu a:hover{
+    text-decoration: none;
+}
+
+.bottom-text{
+    border-top: #f3f3f3 1px solid;
+    background-color: #c5c5c5;
+    height:40px;
+    line-height: 40px;
+}
+
+.bottom-text p{
+    margin: 0px;
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.root{
+    height: 40px;
+    min-width: 1080px;
+}
+
+.root ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.root li{
+    float: left;
+    display: list-item;
+    margin-left: 3px;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+.root a{
+    padding-left: 5px;
+    cursor: pointer;
+    color: #000000;
+    height: 40px;
+    line-height: 40px;
+}
+
+.root a:hover{
+    text-decoration: none;
+}
+
+.item-part{
+    min-width: 1080px;
+    margin: 0px;
+    padding: 40px 0px;
+}
+
+.item-information{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-pic-text{
+    width: 520px;
+}
+.item-pic-text img{
+    width: 520px;
+    height: auto;
+}
+
+.item-select{
+    width: 340px;
+
+}
+
+.item-select ul{
+    margin: 0px;
+    padding: 0px;    
+    list-style: none;
+}
+
+.item-select li{
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.item-select select{
+    width: 100%;
+    height: 30px;
+}
+
+.item-select hr{
+    margin: 20px 0px;
+}
+
+.item-select input{
+    width: 100px;
+    padding-left: 10px;
+    height: 30px;
+}
+
+.submitbuy{
+    margin: 10px 0px;
+    height: 36px;
+    background-color: #000000;
+}
+
+.submitbuy a{
+    display: block;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+.submitbuy a:hover{
+    text-decoration: none;
+}
+
+.rela-item h2{
+    margin: 0px;
+    padding: 0px 0px 10px;
+}
+
+.item-rela-box{
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-rela-box img{
+    width: 100px;
+    height: 100px;
+}
+
+.item-rela-box-text{
+    width: 220px;
+}
+
+.item-rela-box-text h3{
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.last-next-item{
+    min-width: 1080px;
+    height: 100px;
+}
+
+.last-next-item ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+.last-next-item li{
+    flex: 0 0 450px;
+}
+
+.last-next-item a{
+    display: block;
+    margin: 0px;
+    padding: 0px 40px;
+    color: #000000;
+    line-height: 100px;
+}
+
+.last-next-item i{
+    line-height: 100px;
+    margin: 0px;
+    padding: 0px 5px;
+}
+
+.last-next-item a:hover{
+    background-color: #d3d3d3;
+    text-decoration: none;
+}
+
+.last-next-item .last{
+   text-align: right;
+}
+
+.last-next-item .next{
+    text-align: left;
+}
+
+.purchase-page{
+    min-width: 1080px;
+}
+
+.purchase-car{
+    width: 100%;
+}
+
+.purchase-car-box{
+    height: 125px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.subtotal{
+    text-align: right;
+}
+
+.purchase-car-box-text{
+    padding-left: 8px;
+}
+
+.purchase-car-box-text h3{
+    margin: 0px;
+    padding: 10px 0px 0px;
+}
+
+.purchase-car-box-text p{
+    margin: 0px;
+    padding: 3px;
+}
+
+.purchase-car-box-text a{
+    color: #8a8a8a;
+    text-decoration: #8a8a8a underline;
+}
+
+.purchase-car input{
+    width: 60px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.rebate-total{
+    min-width: 1080px;
+    padding-bottom: 40px;
+}
+
+.settle-accounts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount{
+    width: 520px;
+}
+
+.discount input{
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.total{
+    width: 340px;
+}
+
+.cost-total{
+    width: 100%;
+    text-align: right;
+}
